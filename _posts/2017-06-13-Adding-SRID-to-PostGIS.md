@@ -27,14 +27,9 @@ generate a SQL statement for you to insert the information on the new CRS into y
 ```
 INSERT into spatial_ref_sys (srid, auth_name, auth_srid, proj4text, srtext) values ( 102645, 'ESRI', 102645, '+proj=lcc +lat_1=34.03333333333333 +lat_2=35.46666666666667 +lat_0=33.5 +lon_0=-118 +x_0=2000000 +y_0=500000.0000000002 +datum=NAD83 +units=us-ft +no_defs ', 'PROJCS["NAD_1983_StatePlane_California_V_FIPS_0405_Feet",GEOGCS["GCS_North_American_1983",DATUM["North_American_Datum_1983",SPHEROID["GRS_1980",6378137,298.257222101]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Lambert_Conformal_Conic_2SP"],PARAMETER["False_Easting",6561666.666666666],PARAMETER["False_Northing",1640416.666666667],PARAMETER["Central_Meridian",-118],PARAMETER["Standard_Parallel_1",34.03333333333333],PARAMETER["Standard_Parallel_2",35.46666666666667],PARAMETER["Latitude_Of_Origin",33.5],UNIT["Foot_US",0.30480060960121924],AUTHORITY["EPSG","102645"]]');
 ```
-Note: If you grab information from spatialreference.org and generate the SQL statement and ttry to insert the SRS into your database, you may get an error (I did in my case). After some researching, I found out that it is because, for whatever reason, spatialreference.org adds a '9' to the beginning of the SRID, which then causes an error in PostGIS. You will not have this problem with epsg.io, which is why I recommend that one.
+Go ahead and copy the INSERT statement into a new SQL Query within the database. You should now be good to go.
+
+Note: If you grab information from spatialreference.org and generate the SQL statement and try to insert the SRS into your database, you may get an error (I did in my case). After some researching, I found out that it is because, for whatever reason, spatialreference.org adds a '9' to the beginning of the SRID, which then causes an error in PostGIS. You will not have this problem with epsg.io, which is why I recommend that one.
 
 ## Step 3: Enjoy your new SRS
-In this case, let's say I wanted to query the High Injury Network, which is listed on the GeoHub Portal [here](http://geohub.lacity.org/datasets/4ba1b8fa8d8946348b29261045298a88_0).
-```
-CREATE SERVER hin
-  FOREIGN DATA WRAPPER ogr_fdw
-  OPTIONS (
-    datasource 'http://geohub.lacity.org/datasets/4ba1b8fa8d8946348b29261045298a88_0.geojson',
-    format 'GeoJSON' );
-```
+You should now be able to reference the SRID using the integer value that you supplied when creating the new SRS. Good Luck!
