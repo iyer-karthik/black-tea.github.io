@@ -4,8 +4,31 @@ category: Data Analysis
 # Setting Up My Windows Machine for Data Analysis
 This is my recording of the steps I've taken to setup my machine for the data analysis I've done here at the City. Theses instructions would be most useful to those working with spatial databases, especially if an ESRI product is installed. I am configuring my installations of PostgreSQL, ArcGIS for Desktop, and Python.
 
+# First (easy) Path: Install Anaconda Separately
+
+## Step 1: Install Anaconda
+Esri has actually put together a pretty decent [how-to guide](https://developers.arcgis.com/python/guide/install-and-set-up/) on getting setup with Anaconda on your machine. 
+
+## Step 2: Install relevant libraries
+Once you install Anaconda, open the Anaconda command prompt and type the following to install the esri Python API:
+```
+conda install -c esri arcgis
+```
+The "-c esri" directs conda to look for the arcgis package in the esri channel instead of the default/main channel. In my data analysis, I plan to connect to our PostgreSQL database, so I will need the psycopg2 package:
+```
+conda install psycopg2
+```
+For moving data to/from the shapefile format, I'll need fiona:
+```
+conda install -c conda-forge fiona
+```
+Similarly, we direct conda to look for the fiona package in the conda-forge channel instead of the default/main channel.
+
+# Second (harder) Way: Install Data Science Stack while maintaining existing ESRI stack
+
 ## Step 1: Assess Current Python Installation
 Currently have: ArcGIS for Desktop, Python 2.7
+
 Setting Up: PostgreSQL, Python 3
 
 If, like me, you are running ArcGIS for Desktop (10.4.1 in my case), you will already have the 32-bit version of python 2.7 installed here:
