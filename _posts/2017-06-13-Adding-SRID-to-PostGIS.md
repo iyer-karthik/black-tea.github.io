@@ -46,7 +46,7 @@ VALUES (
     UNIT["Foot_US",0.30480060960121924],
     AUTHORITY["EPSG","102645"]]');
 ```
-Go ahead and copy the INSERT statement into a new SQL Query within the database. You should now be good to go.
+Go ahead and copy the INSERT statement into a new SQL Query within the database. You should now be good to go!
 
 Note: If you grab information from spatialreference.org and generate the SQL statement and try to insert the SRS into your database, you may get an error (I did in my case). After some researching, I found out that it is because, for whatever reason, spatialreference.org adds a '9' to the beginning of the SRID, which then causes an error in PostGIS. You will not have this problem with epsg.io, which is why I recommend that one.
 
