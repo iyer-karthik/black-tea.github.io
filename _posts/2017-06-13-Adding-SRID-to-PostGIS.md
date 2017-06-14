@@ -2,6 +2,8 @@
 category: Data Analysis
 ---
 # Adding a SRID to PostGIS
+_Update: Today I found out that there is an EPSG code for the NAD 83 US Feet, (EPSG:2229). Although it turned out to not be necessary for this projection, you may find the following steps still useful if you come across a less common projection_
+
 When you install the PostGIS extension for PostgreSQL, it comes with all the standard geographic and projected coordinate systems using the
 structured EPSG Geodetic Parameter Dataset, which can be found at the [International Association of Oil & Gas Producers EPSG Homepage](http://www.epsg.org/).
 
