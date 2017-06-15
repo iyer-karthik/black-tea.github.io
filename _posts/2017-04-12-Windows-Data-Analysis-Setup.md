@@ -7,7 +7,7 @@ This is my recording of the steps I've taken to setup my machine for the data an
 # First (easy) Path: Install Anaconda Separately
 
 ## Step 1: Install Anaconda
-Esri has actually put together a pretty decent [how-to guide](https://developers.arcgis.com/python/guide/install-and-set-up/) on getting setup with Anaconda on your machine. 
+Esri has actually put together a pretty decent [how-to guide](https://developers.arcgis.com/python/guide/install-and-set-up/) on getting setup with Anaconda on your machine. For this, I went with the 64-bit installation using Python 3.X
 
 ## Step 2: Install relevant libraries
 Once you install Anaconda, open the Anaconda command prompt and type the following to install the esri Python API:
