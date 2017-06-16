@@ -25,11 +25,13 @@ _Note: If you are only looking to read FileGDBs, you can use the [OpenFileGDB dr
 ### ogr2ogr
 Ogr2Ogr is a command-line utility program designed to convert spatial data between different file formats. This is the quickest and most often recommended approach for quickly getting your data out of a PostGIS Table onto your drive. The structure of how you would create a command using this utility is detailed [here](http://www.gdal.org/ogr2ogr.html) on the GDAL website. For example, from the windows command line, you could send the following command to pull a PostGIS table into the ESRI Shapefile format:
 ```
-ogr2ogr -f "ESRI Shapefile" C:\Temp\test.shp PG: "host=localhost user=your_username_here dbname=your_db_name_here password=your_password_here" "your_table_name_here"
+ogr2ogr -f "ESRI Shapefile" C:\Temp\test.shp PG: "host=localhost user=your_username_here 
+dbname=your_db_name_here password=your_password_here" "your_table_name_here"
 ```
 The first argument (-f "ESRI Shapefile") specifies that we want to output a file in the ESRI Shapefile format. The second argment (C:\Temp\test.shp) specifies the location and filename for our output shapefile. For the third argument, you pass the parameters to connect to your PostgreSQL database, and the final argument is the table name. In this case I wanted to dump the entire table, but you can also add SQL to add a filter to your export by replacing the table name with an SQL statment, as shown below:
 ```
-ogr2ogr -f "ESRI Shapefile" C:\Temp\test.shp PG: "host=localhost user=your_username_here dbname=your_db_name_here password=your_password_here" -sql "SELECT name, the_geom FROM table_name"
+ogr2ogr -f "ESRI Shapefile" C:\Temp\test.shp PG: "host=localhost user=your_username_here 
+dbname=your_db_name_here password=your_password_here" -sql "SELECT name, the_geom FROM table_name"
 ```
 Another reference I recommend for other common configurations is the [OGR2OGR Cheatsheet](http://www.bostongis.com/PrinterFriendly.aspx?content_name=ogr_cheatsheet) put together by Boston GIS.
 
