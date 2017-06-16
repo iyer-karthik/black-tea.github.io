@@ -23,7 +23,7 @@ _Note: If you are only looking to read FileGDBs, you can use the [OpenFileGDB dr
 ## Tools for Exporting your PostGIS data
 
 ### ogr2ogr
-Ogr2Ogr is a command-line utility program designed to convert spatial data between different file formats. This is the quickest and most often recommended approach for quickly getting your data out of a PostGIS Table onto your drive. The structure of how you would create a command using this utility is detailed [here](http://www.gdal.org/ogr2ogr.html) on the GDAL website. For example, from the windows command line, you could send the following command to pull a PostGIS table into the ESRI Shapefile format:
+Ogr2Ogr is a command-line utility program designed to convert spatial data between different file formats. This is the quickest and therefore most often recommended approach for quickly getting your data out of a PostGIS Table onto your drive. The structure of how you would create a command using this utility is detailed [here](http://www.gdal.org/ogr2ogr.html) on the GDAL website. For example, from the windows command line, you could send the following command to pull a PostGIS table into the ESRI Shapefile format:
 ```
 ogr2ogr -f "ESRI Shapefile" C:\Temp\test.shp PG: "host=localhost user=your_username_here 
 dbname=your_db_name_here password=your_password_here" "your_table_name_here"
@@ -52,6 +52,109 @@ command_run = subprocess.check_call(command)
 _Note: Rather than using subprocess.call, I recommend subprocess.check_call since, unlike the call method, it will raise an error when the return code is non-zero, i.e. the command failed. Hat tip to [this post](https://gis.stackexchange.com/questions/154004/execute-ogr2ogr-from-python)._
 
 ### Fiona
-Fiona is a python-specific package designed to help move data in and out of different formats. It is dependent on the drivers in the OGR library that you already installed, so you won't be able to get any file format in Fiona that you couldn't get out of the ogr2ogr utility. 
+Fiona is a python-specific package designed to help move data in and out of different formats. It is dependent on the drivers in the OGR library that you already installed, so you won't be able to get any file format in Fiona that you couldn't get out of the ogr2ogr utility. Athough fiona is a nifty package, the manual will point to [several instances](http://toblerity.org/fiona/manual.html) where other tools would be better suited for your task:
+*If the data is in or destined for a JSON document you should use Python's json or simplejson modules
+*If your data is in a RDBMS like PostGIS, use a Python DB package or ORM like SQLAlchemy or GeoAlchemy. Maybe you're using GeoDjango already. If so, carry on.
+*If your data is served via HTTP from CouchDB or CartoDB, etc, use an HTTP package (httplib2, Requests, etc) or the provider's Python API
+*If you can use ogr2ogr, do so.
 
+For a good introduction of where Fiona would fit in well into your geospatial programming, I recommend [this article](https://macwright.org/2012/10/31/gis-with-python-shapely-fiona.html) from Tom MacWright. Where Fiona excels is in producing shapefiles where the data is not readily availabe in an easy format. I first used it for producing a shapefile from KML data I extracted from the Google Maps API, and Fiona ended up being the perfect solution. In fact, I got famililar enough with the Fiona package that I was using it before ogr2ogr to export data, even though I later learned the ease of the utility. So I figured I would show how Fiona could be used to generate a shapefile from a PostGIS table just for kicks.
 
+Here is a general example of how you would want to generate a shapefile that begins with Shapely geometry (for an introduction to Shapely, see the MacWright article). I pulled the example from [this](https://gis.stackexchange.com/questions/52705/how-to-write-shapely-geometries-to-shapefiles) post.
+```
+from shapely.geometry import mapping, Polygon
+import fiona
+
+# Here's an example Shapely geometry
+poly = Polygon([(0, 0), (0, 1), (1, 1), (0, 0)])
+
+# Define a polygon feature geometry with one attribute
+schema = {
+    'geometry': 'Polygon',
+    'properties': {'id': 'int'},
+}
+
+# Write a new Shapefile
+with fiona.open('my_shp2.shp', 'w', 'ESRI Shapefile', schema) as c:
+    ## If there are multiple geometries, put the "for" loop here
+    c.write({
+        'geometry': mapping(poly),
+        'properties': {'id': 123},
+    })
+```
+This example should give you an idea for the basic building blocks for shapefiles via Fiona. Each object is a dictionary that includes geometry and property keys. You will also need to define a schema ahead of time, specifying the field types for each. For those of you who have used GeoJSON, this should very familiar. In fact, the Fiona [documentation](https://github.com/sgillies/fiona) notes that the record mappings are specifically modeled on the GeoJSON format.
+
+Now, how would we adapt this template for pulling data out of PostGIS and generating a shapefile? We will take the following approach:
+1. Build a JSON object (in this case I built a feature collection) from your PostGIS table from an SQL Query
+2. Grab the SRID fromt he PostGIS table
+3. Establish the schema for the Shapefile output
+4. Determine where you want to save the Shapefile, and Write to Disk!
+
+_Note: This script begins by assuming you have already made a connection to the database and established a cursor object. I am also using an example from my database, where I have a table named "geom_lapd_collisions_xl."_
+```
+##### Export updated data as a shapefile
+# Build feature collection from current rows in geom_lapd_collisions_xl
+build_feature_collection_query = """
+    SELECT jsonb_build_object(
+        'type',     'FeatureCollection',
+        'features', jsonb_agg(feature)
+    )
+    FROM (
+      SELECT jsonb_build_object(
+        'type',       'Feature',
+        'id',         collision_pkey,
+        'geometry',   ST_AsGeoJSON(geom)::jsonb,
+        'properties', to_jsonb(row) - 'collision_pkey' - 'geom'
+      ) AS feature
+      FROM (SELECT * FROM geom_lapd_collisions_xl) row) features;"""  
+cursor.execute(build_feature_collection_query)
+fc = cursor.fetchall()
+
+# Grab the SRID of the geometry column from PostGIS table
+srid_query = """SELECT Find_SRID('public', 'geom_lapd_collisions_xl', 'geom');"""
+cursor.execute(srid_query)
+geom_srid = cursor.fetchone()[0]
+
+# Schema for Fiona output
+out_schema = {
+    'geometry': 'Point',
+    'properties': {
+        'rd':'str',
+        'dr_no':'str',
+        'score':'int',
+        'crm_cd':'int',
+        'mc_inv':'str',
+        'status':'str',
+        'coord_x':'float',
+        'coord_y':'float',
+        'matched':'str',
+        'ped_inv':'str',
+        'vic_age':'str',
+        'vic_dob':'str',
+        'vic_sex':'str',
+        'bike_inv':'str',
+        'coord_xy':'str',
+        'date_occ':'str',
+        'loc_tier':'str',
+        'location':'str',
+        'time_occ':'str',
+        'narrative':'str',
+        'day_of_week':'str',
+        'hit_and_run':'str',
+        'at_intersection':'str',
+        'collision_severity':'str'
+    }
+}
+
+# Using Fiona, output feature collection to Shapefile format
+out_dir = 'Z:/GIS/DataLibrary/LAPD_CrimeCollision/Tables/Raw_Collisions_fromDianeWeber/PostGIS_Shapefile_Output/shp/'
+out_file = 'collisions.shp'
+out_path = out_dir + out_file
+with fiona.open(out_path,'w', crs=from_epsg(geom_srid), driver='ESRI Shapefile', schema=out_schema) as c:
+    for record in fc[0][0]['features']:
+        c.write(record)
+print("written shapefile to disk.")
+```
+That's Fiona.
+## Go For It!
+Now you've got at least 2 tools to pull data from a PostGIS database and export to your drive. Good luck!
