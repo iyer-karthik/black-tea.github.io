@@ -21,7 +21,7 @@ GDAL / OGR is a pretty handy package, and it is already setup for output to the 
 2. Download the [GDAL wheel](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal) from Christoph Gohlke's website (for the whl installation, see Note (1) below).
 3. Download the necessary drivers through the [File Geodatabase API](http://appsforms.esri.com/products/download/#File_Geodatabase_API_1.3) provided by ESRI.
 4. Create a New Variable in Environmental Variables
-5. Open __init__.py from osgeo and uncomment line 10, which contains the following code:
+5. Open "__init__.py" from osgeo and uncomment line 10, which contains the following code:
 ```
         #os.environ['GDAL_DRIVER_PATH'] = os.path.join(os.path.dirname(__file__), 'gdalplugins')
 ```
