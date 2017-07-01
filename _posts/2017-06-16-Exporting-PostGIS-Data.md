@@ -34,7 +34,9 @@ print(driver.GetName())
 If everything works, you should see "FileGDB." If not, you will get an error, something along the lines of "Nonetype object has no attribute GetName()"
 
 _Notes:
+
 (1) When installing the GDAL whl file for Python 3.5/3.6, I noticed that the installation didn't come with the gdalplugins folder. After emailing Christoph, he informed me that "FileGDB 1.3 does not support Visual Studio 2015 required by Python 3.5 and 3.6. Python 3.4 should work. FileGDB 1.5 was not available when I built the current GDAL binaries." So, if you are using Python 3.X, at least right now use Python 3.4 for easy integration with this GDAL wheel. This shouldn't be too hard if you are using [virtualenv](https://black-tea.github.io/data%20analysis/2017/06/30/The-Virtues-of-Virtual-Environments.html).
+
 (2) If you are only looking to read FileGDBs, you can use the [OpenFileGDB driver](http://www.gdal.org/drv_openfilegdb.html), which comes with the standard installation of GDAL / OGR. However, as mentioned earlier, you won't be able to use this one to write File Geodatabses. Also note that you will only be able to use this for File Geodatabases created by ArcGIS 9 and above._
 
 ## Tools for Exporting your PostGIS data
