@@ -16,9 +16,26 @@ ogrinfo --formats
 For ESRI super users, you will note that there is support already provided for the ESRI Shapefile format. However, note that there is no built-in support for the ESRI File Geodatabase format, which brings us to the next step...
 
 ### ESRI FileGDB Driver
-GDAL / OGR is a pretty handy package, and it is already setup for output to the ESRI Shapefile format. However, for those of us primarily working in ESRI File Geodatabases, you will be SOL because it won't come with the drivers necessary to write Esri File Geodabases. Fortunately, you can find the necessary drivers through the [File Geodatabase API](http://appsforms.esri.com/products/download/#File_Geodatabase_API_1.3) provided by ESRI.
+GDAL / OGR is a pretty handy package, and it is already setup for output to the ESRI Shapefile format. However, for those of us primarily working in ESRI File Geodatabases, you will be SOL because it won't come with the drivers necessary to write Esri File Geodabases. Fortunately, [others](https://glenbambrick.com/2017/03/10/setting-up-gdal-with-filegdb/) have put together helpful tutorials on getting the FileGDB driver up and running for you analyses (instructions are specific to Windows). In general, you need to:
+1. Make sure you have Microsoft Visual C++ Service Pack (linked instructions use 2008)
+2. Download the [GDAL wheel](http://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal) from Christoph Gohlke's website (for the whl installation, see Note (1) below).
+3. Download the necessary drivers through the [File Geodatabase API](http://appsforms.esri.com/products/download/#File_Geodatabase_API_1.3) provided by ESRI.
+4. Create a New Variable in Environmental Variables
+5. Open __init__.py from osgeo and uncomment line 10, which contains the following code:
+```
+        #os.environ['GDAL_DRIVER_PATH'] = os.path.join(os.path.dirname(__file__), 'gdalplugins')
+```
+6. Open Python and test the setup using the following code (using python instead of ogrinfo b/c I am working in virtualenv):
+```
+from osgeo import ogr
+drv = ogr.GetDriverByName("FileGDB")
+print(driver.GetName())
+```
+If everything works, you should see "FileGDB." If not, you will get an error, something along the lines of "Nonetype object has no attribute GetName()"
 
-_Note: If you are only looking to read FileGDBs, you can use the [OpenFileGDB driver](http://www.gdal.org/drv_openfilegdb.html), which comes with the standard installation of GDAL / OGR. However, as mentioned earlier, you won't be able to use this one to write File Geodatabses. Also note that you will only be able to use this for File Geodatabases created by ArcGIS 9 and above._
+_Notes:
+(1) When installing the GDAL whl file for Python 3.5/3.6, I noticed that the installation didn't come with the gdalplugins folder. After emailing Christoph, he informed me that "FileGDB 1.3 does not support Visual Studio 2015 required by Python 3.5 and 3.6. Python 3.4 should work. FileGDB 1.5 was not available when I built the current GDAL binaries." So, if you are using Python 3.X, at least right now use Python 3.4 for easy integration with this GDAL wheel. This shouldn't be too hard if you are using [virtualenv](https://black-tea.github.io/data%20analysis/2017/06/30/The-Virtues-of-Virtual-Environments.html).
+(2) If you are only looking to read FileGDBs, you can use the [OpenFileGDB driver](http://www.gdal.org/drv_openfilegdb.html), which comes with the standard installation of GDAL / OGR. However, as mentioned earlier, you won't be able to use this one to write File Geodatabses. Also note that you will only be able to use this for File Geodatabases created by ArcGIS 9 and above._
 
 ## Tools for Exporting your PostGIS data
 
