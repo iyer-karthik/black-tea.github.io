@@ -34,9 +34,9 @@ deactivate
 ```
 ## Using a virtualenv in an IPython notebook
 Now after installing the different virtual environments (and different python versions), you will notice that when you run the Jupyter Notebook, you won't have the kernel for the virtualenv pre-loaded. Getting it to recognize the virtual environments just takes a few additional [steps](https://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs/):
-1. Install the ipython kernle module into your virtualenv
+1. Activate your virtualenv and install the ipython kernle module* 
 ```
-activate [env_name] # activate your virtualenv, if you haven't done so already
+activate [env_name] 
 pip install ipykernel
 ```
 2. Now run the kernel "self-install" script:
@@ -45,3 +45,5 @@ python -m ipykernel install --user --name=[env_name]
 ```
 3. You should now be able to see your kernel in the IPython notebook menu: Kernel -> Change kernel and be able to switch to it (you may need to refresh the page)
 4. There you go!
+
+__*ipykernel will require Microsoft Visual C++ Compiler for Python. If you don't have it, you can get it from [here](http://aka.ms/vcpython27)__
