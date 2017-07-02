@@ -32,3 +32,16 @@ When you want to exit the virtual environment, you can at any time simply type:
 ```
 deactivate
 ```
+## Using a virtualenv in an IPython notebook
+Now after installing the different virtual environments (and different python versions), you will notice that when you run the Jupyter Notebook, you won't have the kernel for the virtualenv pre-loaded. Getting it to recognize the virtual environments just takes a few additional [steps](https://help.pythonanywhere.com/pages/IPythonNotebookVirtualenvs/):
+1. Install the ipython kernle module into your virtualenv
+```
+activate [env_name] # activate your virtualenv, if you haven't done so already
+pip install ipykernel
+```
+2. Now run the kernel "self-install" script:
+```
+python -m ipykernel install --user --name=[env_name]
+```
+3. You should now be able to see your kernel in the IPython notebook menu: Kernel -> Change kernel and be able to switch to it (you may need to refresh the page)
+4. There you go!
