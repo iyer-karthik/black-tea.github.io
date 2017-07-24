@@ -1,8 +1,8 @@
-# Researcher
 
-### [Demo Website](https://ankitsultana.me/researcher)
 
-A clean, single column, monospace resume template built for jekyll
+### About 
+
+This website has been built by forking the repository (https://github.com/black-tea/black-tea.github.io) which is based on [Researcher](https://github.com/bk2dcradle/researcher), a clean, single column, monospace resume template built for jekyll. 
 
 ### Installation
 
