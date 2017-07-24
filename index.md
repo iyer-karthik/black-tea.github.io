@@ -4,15 +4,9 @@ layout: default
 
 ## Welcome!
 
-<img class="profile-picture" src="profile_photo_square.jpg">
+I am a PhD candidate in the [Department of Mathematics](https://math.washington.edu/) at the [University of Washington](https://www.washington.edu/) in Seattle. My thesis supervisor is [Gunther Uhlmann](https://sites.math.washington.edu/~gunther/). My broad area of research is inverse problems arising in partial differential equations. I am specifically interested in the uniqueness aspect of elliptic inverse problems.
 
-I am a transportation planner and researcher based in Los Angeles, California. 
-
-I've been fortunate enough to work on and study a variety of different topics within transportation, including the famous 'Carmageddon,' Los Angeles' innovative ExpressPark proero traffic safety initiative. In my spare time, I've undertaken other fun transportation-related projects, such as the Los Angeles Bus Map. 
-
-Please take a look at my [resume](documents/Tim_Black_Resume.pdf) or reach out to me at [timothy.c.black@gmail.com](mailto:timothy.c.black@gmail.com)  
- 
- 
+Before joining the PhD program, I studied at [Tata Institute of Fundamental Research](https://www.math.tifrbng.res.in/) in Bangalore where I graduated with a MSc degree in Mathematics. Prior to that, I did my undergraduate studies from [University of Mumbai](http://www.mu.ac.in/) where I obtained a BSc degree in Mathematics. 
  
  
 ---
