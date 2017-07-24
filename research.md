@@ -2,12 +2,19 @@
 layout: default
 ---
 
-## Peer-reviewed Publications
+## Research
 
-1. M.Brozen, T.Black, R.Liggett: Comparing Measures and Variables in Multimodal Street Performance Calculations ( [paper](http://trrjournalonline.trb.org/doi/10.3141/2420-01) )
+Inverse problems is a field of study dealing with inversion of models or data. An inverse problem is a mathematical framework that is used to obtain information about a physical object or system from observed measurements. The solution to this problem is useful because it generally provides information about a physical parameter that we cannot directly observe. Applications of inverse problems can be found in medical imaging, geophysics, computer vision, astronomy, nondestructive testing, and many others.
 
-## Other Transportation Research
+A typical inverse problem is to recover the coefficients of a partial differential equation (PDE) i.e. physical properties like medium propagation, internal density distribution, etc from measurements on the boundary of the domain. My research has been on unique recovery of coefficients in an elliptic PDE defined on a bounded domain from the knowledge of boundary measurements which are encoded through the so-called Dirichlet-to-Neumann (DN) map. The main emphasis<br> of my research has been on the the unique recovery of coefficient for two different families of elliptic PDEs under low regularity or degeneracy of the coefficients.
 
-1. T.Black, J.Swartz, T.Fremaux - Vision Zero and Beyond: A Simple Yet Powerful Data Strategy for Evaluating Potential Engineering Solutions ( [paper](documents/TRB2017_VisionZeroBeyond_Paper.pdf) / [poster](documents/TRB2017_VisionZeroBeyond_Poster.pdf) )
-2. T.Black - Redefining "Transportation Impact": A Comparison of Emerging Methodologies ( [paper](documents/TRB2015_SB743_Paper.pdf) / [slides](documents/TRB2015_SB743_Slides.pdf) )
-3. M.Brozen, T.Black, H.Huff, R.Liggett - Multimodal Street Performance Measure Sensitivity Case Study: How to Get an A ( [poster](documents/TRB2015_MMLOS_Poster.pdf) )
+### Papers
+
+1. K. Iyer, Y. Assylbekov: Determining rough first order perturbations of the polyharmonic operator ( [paper](https://arxiv.org/pdf/1703.02569.pdf) / [slides](documents/TRB2017_VisionZeroBeyond_Poster.pdf) )
+2. K. Iyer, T. Ghosh: Cloaking for a quasi-linear elliptic partial differential equation ( [paper](https://arxiv.org/pdf/1704.02714.pdf) )
+
+### Notes 
+
+
+
+
