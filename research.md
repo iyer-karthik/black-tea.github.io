@@ -14,7 +14,7 @@ A typical inverse problem is to recover the coefficients of a partial differenti
 2. K. Iyer, T. Ghosh: Cloaking for a quasi-linear elliptic partial differential equation ( [paper](https://arxiv.org/pdf/1704.02714.pdf) )
 
 ### Notes 
-Expository [notes](documents/HT_uniqueness_exposition) on Haberman and Tataru's proof on uniqueness in the inverse conductivity problem.
+Expository [notes](documents/HT_uniqueness_exposition.pdf) on Haberman and Tataru's proof on uniqueness in the inverse conductivity problem.
 
 <br>
 <br>
