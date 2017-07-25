@@ -18,7 +18,7 @@ A typical inverse problem is to recover the coefficients of a partial differenti
 
 ### Talks
 
-The following talks were given at the GSAS (Graduate Student Analysis Seminar) at Department of Mathematics, University of Washington. GSAS is a great, low-stakes forum for graduate students in the area of analysis to share their reading and research in the form of a seminar talk
+The following talks were given at the GSAS (Graduate Student Analysis Seminar) at Department of Mathematics, University of Washington. GSAS is a great, low-stakes forum for graduate students in the area of analysis to share their reading and research in the form of a seminar talk.
 
 1. [A 5 minute introduction to inverse problems](documents/short_intro_inverse_problem_slides.pdf)
 2. [Cloaking for a linear eillptic equation - KSVW paper](documents/KSVW_cloaking_paper_slides.pdf)
