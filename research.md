@@ -14,8 +14,15 @@ A typical inverse problem is to recover the coefficients of a partial differenti
 2. K. Iyer, T. Ghosh: Cloaking for a quasi-linear elliptic partial differential equation ( [paper](https://arxiv.org/pdf/1704.02714.pdf) )
 
 ### Notes 
-Expository [notes](documents/HT_uniqueness_exposition.pdf) on Haberman and Tataru's proof on uniqueness in the inverse conductivity problem.
+[This](documents/HT_uniqueness_exposition.pdf) is an exposition on Haberman and Tataru's proof on uniqueness in the inverse conductivity problem. I wrote it mainly to teach myself the techniques used in their proof. 
 
+### Talks
+
+The following talks were given at the GSAS (Graduate Student Analysis Seminar) at Department of Mathematics, University of Washington. GSAS is a great, low-stakes forum for graduate students in the area of analysis to share their reading and research in the form of a seminar talk
+
+1. [A 5 minute introduction to inverse problems](documents/short_intro_inverse_problems_slides.pdf)
+2. [Cloaking for a linear eillptic equation - KSVW paper](documents/KSVW_cloaking_paper_slides.pdf)
+3. [Uniqueness quasilinear inverse problem - General Exam talk](documents/generals_slides.pdf)
 <br>
 <br>
 
