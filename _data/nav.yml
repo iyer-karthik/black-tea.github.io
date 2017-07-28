@@ -1,6 +1,6 @@
 
 - name: "teaching"
-  link: "teaching"
+  url: /teaching/
 
 - name: "coursework"
   link: "coursework"
