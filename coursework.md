@@ -8,6 +8,6 @@ Here is a collection of assignment problems and their solutions to some of the g
 
 Instructor: [Matt Lorig](https://mattlorig.yolasite.com/)
 
-2. [Monte Carlo Simulation in Finance](documents/Simulation_Exercises) 
+2. [Monte Carlo Simulation in Finance](documents/Simulation_Exercises.pdf) 
 
 Instructor: [Tim Leung](https://sites.google.com/site/timleungresearch/)
