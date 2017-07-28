@@ -10,11 +10,12 @@ A typical inverse problem is to recover the coefficients of a partial differenti
 
 ### Papers
 
-1. K. Iyer, Y. Assylbekov: Determining rough first order perturbations of the polyharmonic operator ( [paper](https://arxiv.org/pdf/1703.02569.pdf) / [slides](documents/polyharmonic_slides.pdf) )
-2. K. Iyer, T. Ghosh: Cloaking for a quasi-linear elliptic partial differential equation ( [paper](https://arxiv.org/pdf/1704.02714.pdf) )
+1. K. Iyer, Y. Assylbekov: [Determining rough first order perturbations of the polyharmonic operator](https://arxiv.org/pdf/1703.02569.pdf)
+
+2. K. Iyer, T. Ghosh: [Cloaking for a quasi-linear elliptic partial differential equation](https://arxiv.org/pdf/1704.02714.pdf)
 
 ### Notes 
-[This](documents/HT_uniqueness_exposition.pdf) is an exposition on Haberman and Tataru's proof on uniqueness in the inverse conductivity problem. I wrote it mainly to teach myself the techniques used in their proof. 
+[This](documents/HT_uniqueness_exposition.pdf) is an exposition on Haberman and Tataru's proof on uniqueness in the inverse conductivity problem. I wrote it primarily to teach myself the techniques used in their proof. 
 
 ### Talks
 
@@ -23,6 +24,7 @@ The following talks were given at the GSAS (Graduate Student Analysis Seminar) a
 1. [A very short introduction to inverse problems](documents/short_intro_inverse_problem_slides.pdf)
 2. [Cloaking for a linear eillptic equation](documents/KSVW_cloaking_paper_slides.pdf)
 3. [Uniqueness quasilinear inverse problem - General Exam talk](documents/generals_slides.pdf)
+4. [Determining rough first order perturbations of the polyharmonic operator](documents/polyharmonic_slides.pdf)
 <br>
 <br>
 
