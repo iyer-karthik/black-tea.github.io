@@ -27,6 +27,10 @@ Fall 2013, Winter 2014
 1. Math 426, Part 3 of the *Fundamental Concepts on Mathematical Analysis* sequence.
 
 2. Math 444 and 445, Geometry for Teachers.
-[Winter 2015, 2017 and Spring 2015, 2017](https://sites.math.washington.edu/~lee/Courses/archives.html)
+
+[Winter 2015, 2017; Spring 2015, 2017](https://sites.math.washington.edu/~lee/Courses/archives.html)
+
 [Winter 2016](http://faculty.washington.edu/chirva/Math444_Winter2016/math444.html)
+<br>
+<br>
 
