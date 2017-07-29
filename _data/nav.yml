@@ -1,4 +1,7 @@
 
+- name: "teaching"
+  link: "teaching"
+
 - name: "coursework"
   link: "coursework"
 
