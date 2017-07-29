@@ -8,7 +8,7 @@ Inverse problems is a field of study dealing with inversion of models or data. A
 
 A typical inverse problem is to recover the coefficients of a partial differential equation (PDE) i.e. physical properties like medium propagation, internal density distribution, etc from measurements on the boundary of the domain. My research has been on unique recovery of coefficients in an elliptic PDE defined on a bounded domain from the knowledge of boundary measurements which are encoded through the so-called Dirichlet-to-Neumann (DN) map. The main emphasis of my research has been on the the unique recovery of coefficient for two different families of elliptic PDEs under low regularity or degeneracy of the coefficients.
 
-### Papers
+### Submitted Papers
 
 1. K. Iyer, Y. Assylbekov: [Determining rough first order perturbations of the polyharmonic operator](https://arxiv.org/pdf/1703.02569.pdf)
 
