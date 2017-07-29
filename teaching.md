@@ -17,7 +17,7 @@ triple), a bit of gradient and partial derivatives, line integrals, vector field
 them using the theorem of Gauss, Green and Stokes. This course is 'end-loaded', in that there
 are a lot of big topics in the last 2 weeks. Be ready for that!
 
-Please have a look at [this](documents/syllabus_math324_fall_2015.pdf) for details about the course policies, course structure and grade distribution and [this](documents/CourseSchedulefall15.pdf) for the tentative course schedule.
+Please have a look at [this](documents/syllabus_math324_fall2015.pdf) for details about the course policies, course structure and grade distribution and [this](documents/CourseSchedulefall15.pdf) for the tentative course schedule.
 
 #### Assignments
 
