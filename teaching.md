@@ -29,7 +29,7 @@ Please have a look at [this](documents/syllabus_math_324_fall_2015.pdf) for deta
 
 #### Quizzes and Exams
 
-[Quiz 1](documents/Quiz1math324fall2015.pdf), [Quiz 2](documents/Quiz2math324fall2015.pdf)
+[Quiz 1](documents/Quiz1math324fall15.pdf), [Quiz 2](documents/Quiz2math324fall15.pdf)
 
 [Midterm](documents/MidtermSolutions.pdf)
 
