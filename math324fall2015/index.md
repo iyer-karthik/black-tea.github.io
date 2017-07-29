@@ -1,6 +1,3 @@
----
-layout: default
----
 
 Welcome to Math 324! This webpage contains the course syllabus, the homework schedule, a course calendar and links to review material. 
 Each week, I will be posting homework assignments and other review materials. Please check back regularly.
