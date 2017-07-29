@@ -1,6 +1,9 @@
 
 - name: "teaching"
-  link: "teaching"
+  href: "/teaching/"
+  subcategories:
+    - subtitle: "Math 324 Fall 2015"
+      subhref: "/teaching/math324fall2015/"
 
 - name: "coursework"
   link: "coursework"
