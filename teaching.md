@@ -45,9 +45,7 @@ of review materials, overview of each of the sections, worked out examples and a
 2. [Khan Academy](https://www.khanacademy.org/math/multivariable-calculus) has lots of amazingly awesome videos on everything 
 that we will cover in the course. 
 
-3. [Class Discussion Board](https://catalyst.uw.edu/catalyst/chooser/facb31d100d5df47192f587514e8c920)
-
-4.  Me - ask questions in class and come to my office hours. If you have *any* problems regarding the course material or otherwise, 
+3.  Me - ask questions in class and come to my office hours. If you have *any* problems regarding the course material or otherwise, 
 please do no hesitate to contact me!
 
 -----------------
