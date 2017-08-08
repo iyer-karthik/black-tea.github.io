@@ -2,9 +2,7 @@
 layout: default
 ---
 
-## About me
-
-Welcome to my webpage!
+## Welcome!
 
 I am a PhD candidate in the [Department of Mathematics](https://math.washington.edu/) at the University of Washington, Seattle. My thesis supervisor is [Gunther Uhlmann](https://sites.math.washington.edu/~gunther/). My broad area of research is inverse problems arising in partial differential equations. I am specifically interested in the uniqueness aspect of elliptic inverse problems.
 
