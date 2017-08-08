@@ -1,43 +1,50 @@
 ---
 layout: default
 ---
+
+This webpage contains the course website for classes that I have taught and links to course websites for classes that 
+I have been a teaching assistant or a grader at [University of Washington.](https://math.washington.edu/)
+
 ----------------
 ## Instructor
 ----------
 
-### Math 324, Fall 2015
-Welcome to Math 324! This page contains the course syllabus, the homework schedule, a course calendar and links to review material. 
+#### Math 324, Fall 2015
+This page contains the course syllabus, the homework schedule, a course calendar and links to review material for 
+Math 324 for Fall 2015.
 Each week, I will be posting homework assignments and other review materials. Please check back regularly.
 
-#### About the course
+##### About the course
 
-This course is a continuation of Math 126. The emphasis is mostly
-on integration in multiple variables. We will discuss  iterated integrals (double and
-triple), a bit of gradient and partial derivatives, line integrals, vector fields, surface integrals and  how to calculate
-them using the theorem of Gauss, Green and Stokes. This course is 'end-loaded', in that there
-are a lot of big topics in the last 2 weeks. Be ready for that!
+This course is a continuation of Math 126. The focus is
+mostly on integration in multiple variables. We’ll discuss double and triple
+integrals in different coordinates systems in chapter 15. Then we’ll cover gradient
+and derivatives in chapter 14. Finally, in chapter 16, we’ll introduce line
+integrals, vector fields, surface integrals and ultimately how to calculate them
+using Green’s theorem, Stokes’ theorem and Gauss' theorem. This course is endloaded,
+in that there are a lot of big topics in the last two weeks
 
 Please have a look at [this](documents/syllabus_math324_fall2015.pdf) for details about the course policies, course structure and grade distribution and [this](documents/CourseSchedulefall15.pdf) for the tentative course schedule.
 
-#### Assignments
+##### Assignments
 
 [Homework 1](documents/math324fall2015hw1.pdf), [Homework 2](documents/math324fall2015hw2.pdf), [Homework 3](documents/math324fall2015hw3.pdf)
 
-[Homework 4](documents/math324fall2015hw4.pdf), [Homework 5](documents/math324fall2015hw1.pdf), [Homework 6](documents/math324fall2015hw1.pdf)
+[Homework 4](documents/math324fall2015hw4.pdf), [Homework 5](documents/math324fall2015hw5.pdf), [Homework 6](documents/math324fall2015hw6.pdf)
 
-[Homework 7](documents/math324fall2015hw1.pdf)
+[Homework 7](documents/math324fall2015hw7.pdf)
 
-#### Quizzes and Exams
+##### Quizzes and Exams
 
 [Quiz 1](documents/Quiz1math324fall15.pdf), [Quiz 2](documents/Quiz2math324fall15.pdf)
 
 [Midterm](documents/MidtermSolutions.pdf)
 
-#### Problem sets
+##### Problem sets
 
 [Midterm practice problems](documents/practicemidtermmath324fall15.pdf), [Comprehensive problem set](documents/ReviewProblemsfall15.pdf)
 
-#### Resources for help
+##### Resources for help
 
 1. Dr. Andy Loveless' [page](https://sites.math.washington.edu/~aloveles/ArchivedMaterials/Math324/index.html) has a bunch
 of review materials, overview of each of the sections, worked out examples and an exam archive with solutions. 
@@ -49,20 +56,14 @@ that we will cover in the course.
 please do no hesitate to contact me!
 
 -----------------
-## Teaching Assistant
+### Teaching Assistant/ Grader
 ------------------
-* Math 125, Part 2 of an introductory sequence in Calculus. [Fall 2012](https://sites.math.washington.edu/~yuan/class/M125A12/index.html); [Winter 2013](https://sites.math.washington.edu/~ep2/classes/125/125.html); [Spring 2013](https://sites.math.washington.edu/~aloveles/Math125Spring2013/index.html)
+Links to class webpages:
 
-* Math 126, Part 3 of an introductory sequence in Calculus. (Fall 2013; Winter 2014)
-
-* Math 111, Algebra with Applications. [Fall 2014](https://sites.math.washington.edu/~aloveles/Math111Fall2014/index.html)
-
-------------------------
-## Grader
---------------------
-* Math 426, Part 3 of the *Fundamental Concepts on Mathematical Analysis* sequence. (Winter 2014)
-
-* Math 444 and 445, Geometry for Teachers. [Winter 2015, 2017; Spring 2015, 2017](https://sites.math.washington.edu/~lee/Courses/archives.html); [Summer 2017](https://sites.math.washington.edu/~lee/Courses/444-5-2017/); [Winter 2016](http://faculty.washington.edu/chirva/Math444_Winter2016/math444.html)
+[Fall 2012](https://sites.math.washington.edu/~yuan/class/M125A12/index.html); 
+[Winter 2013](https://sites.math.washington.edu/~ep2/classes/125/125.html); [Spring 2013](https://sites.math.washington.edu/~aloveles/Math125Spring2013/index.html); [Fall 2014](https://sites.math.washington.edu/~aloveles/Math111Fall2014/index.html);
+[Winter 2015, 2017, Spring 2015, 2017](https://sites.math.washington.edu/~lee/Courses/archives.html);  [Winter 2016](http://faculty.washington.edu/chirva/Math444_Winter2016/math444.html);
+[Summer 2017](https://sites.math.washington.edu/~lee/Courses/444-5-2017/)
 <br>
 <br>
 
