@@ -8,7 +8,7 @@ I am a PhD candidate in the [Department of Mathematics](https://math.washington.
 
 Before joining the PhD program, I studied at [Tata Institute of Fundamental Research](https://www.math.tifrbng.res.in/) in Bangalore where I graduated with a MSc degree in Mathematics. Prior to that, I did my undergraduate studies from [University of Mumbai](http://www.mu.ac.in/) where I obtained a BSc degree in Mathematics. 
 
-Please take a look at my [resume](documents/Karthik_Iyer_Resume.pdf) or reach out to me at <karthik2@uw.edu>
+Please take a look at my [Resume](documents/Karthik_Iyer_Resume.pdf) and [Github](https://github.com/iyer-karthik) or reach out to me at <karthik2@uw.edu>
  
  
 ---
