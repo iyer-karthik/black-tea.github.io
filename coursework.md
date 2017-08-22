@@ -2,7 +2,7 @@
 layout: default
 ---
 
-This page contains collection of problem sets and their solutions for various courses that I have taken.
+This page contains a collection of problems and their solutions for some courses that I have taken.
 
 *  [Stochastic Calculus for Finance](documents/StochasticCalcFinance.pdf)
 
