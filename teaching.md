@@ -2,8 +2,8 @@
 layout: default
 ---
 
-This webpage contains the course website for classes that I have taught and links to course websites for classes that 
-I have been a teaching assistant or a grader at [University of Washington.](https://math.washington.edu/)
+This page contains the course website for a class that I taught and links to course websites for classes that 
+I have been a teaching assistant or a grader at University of Washington, Seattle. 
 
 ----------------
 ## Instructor
