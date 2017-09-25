@@ -10,12 +10,12 @@ A typical inverse problem is to recover the coefficients of a partial differenti
 
 ### Submitted Papers
 
-1. K. Iyer, Y. Assylbekov: [Determining rough first order perturbations of the polyharmonic operator](https://arxiv.org/pdf/1703.02569.pdf)
+1. [Determining rough first order perturbations of the polyharmonic operator](https://arxiv.org/pdf/1703.02569.pdf) (with Y. Assylbekov)
 
-2. K. Iyer, T. Ghosh: [Cloaking for a quasi-linear elliptic partial differential equation](https://arxiv.org/pdf/1704.02714.pdf)
+2. [Cloaking for a quasi-linear elliptic partial differential equation](https://arxiv.org/pdf/1704.02714.pdf) (with T. Ghosh)<br>(To appear in *Inverse Problems and Imaging*)
 
 ### Notes 
-[This](documents/HT_uniqueness_exposition.pdf) is an exposition on Haberman and Tataru's proof on uniqueness in the inverse conductivity problem. I wrote it primarily to teach myself the techniques used in their proof. 
+[This](documents/HT_uniqueness_exposition.pdf) is an exposition on Haberman and Tataru's proof on uniqueness in the inverse conductivity problem which I  wrote primarily to teach myself the techniques used in their proof. 
 
 ### Talks
 
