@@ -19,7 +19,7 @@ A typical inverse problem is to recover the coefficients of a partial differenti
 
 ### Talks
 
-The following talks were given at the GSAS (Graduate Student Analysis Seminar) at Department of Mathematics, University of Washington. 
+The following talks were given at Department of Mathematics, University of Washington. 
 
 1. [A very short introduction to inverse problems](documents/short_intro_inverse_problem_slides.pdf)
 2. [Cloaking for a linear eillptic equation](documents/KSVW_cloaking_paper_slides.pdf)
