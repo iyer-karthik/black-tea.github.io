@@ -9,7 +9,7 @@ Inverse problems is a field of study dealing with inversion of models or data. A
 A typical inverse problem is to recover the coefficients of a partial differential equation (PDE) i.e. physical properties like medium propagation, internal density distribution, etc from measurements on the boundary of the domain. My research has been on unique recovery of coefficients in an elliptic PDE defined on a bounded domain from the knowledge of boundary measurements which are encoded through the so-called Dirichlet-to-Neumann (DN) operator. The main emphasis of my research has been on the the unique recovery of coefficients for two different families of elliptic PDEs under low regularity or degeneracy of the coefficients. This can be formulated mathematically as
 a question on the injectivity of the DN operator.
 
-### Submitted Papers
+### Publications
 
 1. [Determining rough first order perturbations of the polyharmonic operator](https://arxiv.org/pdf/1703.02569.pdf) (with Y. Assylbekov)
 
@@ -24,7 +24,7 @@ Haberman and Tataru in 2011 gave a proof on uniqueness in the inverse coductivit
 2. [Cloaking for a linear eillptic equation](documents/KSVW_cloaking_paper_slides.pdf) (Department of Mathematics, UW)
 3. [Uniqueness for a quasilinear inverse problem](documents/generals_slides.pdf) (Department of Mathematics, UW)
 4. [Determining rough first order perturbations of the polyharmonic operator](documents/polyharmonic_slides.pdf) (Department of Mathematics, UW)
-5. [Determining differential equation from its spectral function](documents/spectral_function_presentation) (Department of Civil Engineering, HKUST)
+5. [Determining differential equation from its spectral function](documents/spectral_function_presentation.pdf) (Department of Civil Engineering, HKUST)
 <br>
 <br>
 
