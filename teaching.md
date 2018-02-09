@@ -2,13 +2,12 @@
 layout: default
 ---
 
-This page contains the course website for a class that I taught at University of Washington, Seattle. 
+This page contains the course website for an undergraduate class on Multivariable Calculus which I taught at the University of Washington, Seattle.
 
 ----------------
-## Instructor
+## Math 324, Fall 2015
 ----------
 
-#### Math 324, Fall 2015
 This page contains the course syllabus, the homework schedule, a course calendar and links to review material for 
 Math 324 for Fall 2015.
 Each week, I will be posting homework assignments and other review materials. Please check back regularly.
@@ -23,7 +22,7 @@ integrals, vector fields, surface integrals and ultimately how to calculate them
 using Green’s theorem, Stokes’ theorem and Gauss' theorem. This course is endloaded,
 in that there are a lot of big topics in the last two weeks
 
-Please have a look at the [course details](documents/syllabus_math324_fall2015.pdf) and [course schedule](documents/CourseSchedulefall15.pdf).
+Please have a look at the [course details](documents/syllabus_math324_fall2015.pdf) and the [course schedule](documents/CourseSchedulefall15.pdf).
 
 ##### Assignments
 
@@ -42,10 +41,11 @@ Please have a look at the [course details](documents/syllabus_math324_fall2015.p
 
 [Midterm](documents/MidtermSolutions.pdf)
 
-##### Problem sets
+##### Supplementary materials
 
 [Midterm practice problems](documents/practicemidtermmath324fall15.pdf)<br>
-[Comprehensive problem set](documents/ReviewProblemsfall15.pdf)
+[Comprehensive problem set](documents/ReviewProblemsfall15.pdf)<br>
+[Final Exam checklist of topics](https://sites.math.washington.edu/~aloveles/ArchivedMaterials/Math324/index.html)
 
 ##### Resources for help
 
@@ -55,7 +55,7 @@ of review materials, overview of each of the sections, worked out examples and a
 2. [Khan Academy](https://www.khanacademy.org/math/multivariable-calculus) has lots of amazingly awesome videos on everything 
 that we will cover in the course. 
 
-3.  Me - ask questions in class and come to my office hours. If you have *any* problems regarding the course material or otherwise, 
+3.  Me - ask questions in class and come to my office hours. If you have any problems regarding the course material or otherwise, 
 please do no hesitate to contact me. I am always here to help you!
 
 
