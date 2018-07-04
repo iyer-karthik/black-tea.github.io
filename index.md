@@ -8,7 +8,7 @@ I am a currently a Data Science fellow at [Insight Data Science](https://www.ins
 
 Before joining the PhD program, I studied at [Tata Institute of Fundamental Research](https://www.math.tifrbng.res.in/)  where I graduated with a MSc degree in Mathematics. Prior to that, I did my undergraduate studies from [University of Mumbai](http://www.mu.ac.in/) where I obtained a BSc degree in Mathematics. 
 
-I love solving problems using data science techniques. Please take a look at my [github](https://github.com/iyer-karthik) for my projects. I can be reached at <karthik2@gmx.com>
+Please take a look at my [github](https://github.com/iyer-karthik) for my projects. You can connect with me on [Linkedin](https://www.linkedin.com/in/iyer-karthik/) or reach out to me at <karthik2@gmx.com>
  
  
 ---
