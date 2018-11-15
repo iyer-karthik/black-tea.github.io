@@ -1,11 +1,8 @@
-- name: "teaching"
-  link: "teaching"
- 
 - name: "coursework"
   link: "coursework"
 
 - name: "research"
-  link: "research"
+  link: "research
 
 - name: "home"
   link: "https://iyer-karthik.github.io"
