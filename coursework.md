@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+**This page is no longer updated**
 
 This page contains an archive of assignment problems and their solutions for some graduate courses that I attended at the University of Washington. 
 
