@@ -14,11 +14,13 @@ a question on the injectivity of the DN operator.
 
 ### Publications
 
+The arXiv links for the preprint versions of the articles may be found below. The final versions appear in the indicated journals.
+
 1. Determining rough first order perturbations of the polyharmonic operator (with Y. Assylbekov)<br>
-[Arxiv](https://arxiv.org/pdf/1703.02569.pdf); [Journal](https://www.aimsciences.org/article/doi/10.3934/ipi.2019047)
+[arxiv](https://arxiv.org/abs/1703.02569); [journal](https://www.aimsciences.org/article/doi/10.3934/ipi.2019047)
 
 2. Cloaking for a quasi-linear elliptic partial differential equation (with T. Ghosh)<br>
-[Arxiv](https://arxiv.org/pdf/1704.02714.pdf); [Journal](http://www.aimsciences.org/article/doi/10.3934/ipi.2018020)
+[arxiv](https://arxiv.org/abs/1704.02714v1); [journal](http://www.aimsciences.org/article/doi/10.3934/ipi.2018020)
 
 ### Notes 
 Haberman and Tataru in 2011 gave a proof on uniqueness in the inverse coductivity problem for less regular conductivities. Their paper got me interested in uniqueness aspects for inverse problems in presence of rough coefficients. To understand their proof and teach myself the techniques, I wrote an [exposition](documents/HT_uniqueness_exposition.pdf) explaining in detail the key ideas in their argument. 
